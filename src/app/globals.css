@@ -75,6 +75,20 @@ body {
 	color: #c74b4b;
 }
 
+.auth-logout-btn {
+	background: none;
+	border: none;
+	padding: 0;
+	font-size: 12px;
+	color: #c74b4b;
+	cursor: pointer;
+	text-decoration: none;
+	font-family: inherit;
+}
+.auth-logout-btn:hover {
+	text-decoration: underline;
+}
+
 .koreaterbotec-hero {
 	position: relative;
 	height: 360px;
@@ -274,6 +288,100 @@ body {
 
 .koreaterbotec-footer-text {
 	line-height: 1.8;
+}
+
+/* 회원가입/로그인 공통 */
+.auth-section {
+	min-height: 60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 16px;
+}
+.auth-card {
+	width: 100%;
+	max-width: 400px;
+	background: #fff;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+	padding: 32px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.auth-card h1 {
+	font-size: 22px;
+	font-weight: 700;
+	color: #333;
+	margin-bottom: 24px;
+	border-bottom: 2px solid #c74b4b;
+	padding-bottom: 10px;
+}
+.auth-form {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+.auth-field {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+.auth-field label {
+	font-size: 13px;
+	font-weight: 600;
+	color: #555;
+}
+.auth-field input {
+	border: 1px solid #d0d0d0;
+	padding: 10px 12px;
+	font-size: 14px;
+	border-radius: 4px;
+}
+.auth-field input:focus {
+	outline: none;
+	border-color: #c74b4b;
+}
+.auth-error {
+	color: #c74b4b;
+	font-size: 13px;
+	margin: 0;
+}
+.auth-button {
+	display: inline-block;
+	text-align: center;
+	padding: 12px 20px;
+	font-size: 14px;
+	font-weight: 600;
+	border-radius: 4px;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	margin-top: 8px;
+}
+.auth-button.primary {
+	background-color: #c74b4b;
+	color: #fff;
+}
+.auth-button.primary:hover:not(:disabled) {
+	background-color: #b03d3d;
+}
+.auth-button.primary:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+}
+.auth-footer {
+	font-size: 13px;
+	color: #666;
+	margin-top: 20px;
+	text-align: center;
+}
+.auth-success h1 {
+	border-bottom: none;
+}
+.auth-note {
+	font-size: 13px;
+	color: #666;
+	margin: 12px 0 20px;
+	line-height: 1.5;
 }
 
 @media (max-width: 900px) {

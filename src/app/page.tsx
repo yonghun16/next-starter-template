@@ -1,27 +1,20 @@
 'use client'
 
+import Link from 'next/link'
+import { HeaderAuth } from '@/components/HeaderAuth'
+
 export default function Home() {
   return (
     <main className="koreaterbotec-page">
       <header className="koreaterbotec-header">
         <div className="koreaterbotec-header-inner">
-          <div className="koreaterbotec-logo">코리아터보텍</div>
+          <Link href="/" className="koreaterbotec-logo">코리아터보텍</Link>
           <nav className="koreaterbotec-nav">
             <a href="#">회사소개</a>
             <a href="#">사업안내</a>
             <a href="#">제품소개</a>
           </nav>
-          <div className="koreaterbotec-nav-right">
-            <a href="#" className="koreaterbotec-link">
-              HOME
-            </a>
-            <a href="#" className="koreaterbotec-link">
-              회원가입
-            </a>
-            <a href="#" className="koreaterbotec-link">
-              로그인
-            </a>
-          </div>
+          <HeaderAuth />
         </div>
       </header>
 
